@@ -159,6 +159,79 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-python生成随机密码" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/zhongchao1011.github.io/2017/09/13/python生成随机密码/">python生成随机密码</a>
+    </h1>
+  
+
+        
+        <a href="/zhongchao1011.github.io/2017/09/13/python生成随机密码/" class="archive-article-date">
+  	<time datetime="2017-09-13T05:11:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line"><span class="comment">#-*- coding:utf-8 -*-</span></div><div class="line"><span class="string">'''</span></div><div class="line"><span class="string">简短地生成随机密码，包括大小写字母、数字，可以指定密码长度</span></div><div class="line"><span class="string">'''</span></div><div class="line"><span class="comment">#生成随机密码</span></div><div class="line"><span class="keyword">from</span> random <span class="keyword">import</span> choice</div><div class="line"><span class="keyword">import</span> string</div><div class="line"></div><div class="line"><span class="comment">#python3中为string.ascii_letters,而python2下则可以使用string.letters和string.ascii_letters</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">def</span> <span class="title">GenPassword</span><span class="params">(length=<span class="number">8</span>,chars=string.ascii_letters + string.digits + string.punctuation)</span>:</span></div><div class="line">    <span class="keyword">return</span> <span class="string">''</span>.join([choice(chars) <span class="keyword">for</span> i <span class="keyword">in</span> range(length)])</div><div class="line"></div><div class="line"><span class="keyword">if</span> __name__==<span class="string">"__main__"</span>:</div><div class="line">    <span class="comment">#生成10个随机密码    </span></div><div class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10</span>):</div><div class="line">        <span class="comment">#密码的长度为8</span></div><div class="line">        print(GenPassword(<span class="number">8</span>))</div></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/zhongchao1011.github.io/2017/09/13/python生成随机密码/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -325,6 +398,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">python</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
